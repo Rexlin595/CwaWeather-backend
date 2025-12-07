@@ -37,7 +37,7 @@ const getTaichungWeather = async (req, res) => {
       {
         params: {
           Authorization: CWA_API_KEY,
-          locationName: "台中市", // 這裡確認是台中市
+          locationName: "臺中市", // 這裡確認是台中市
         },
       }
     );
@@ -48,7 +48,7 @@ const getTaichungWeather = async (req, res) => {
     if (!locationData) {
       return res.status(404).json({
         error: "查無資料",
-        message: "無法取得台中市天氣資料",
+        message: "無法取得臺中市天氣資料",
       });
     }
 
